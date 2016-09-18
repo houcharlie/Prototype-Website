@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+<li class = "active"><a href="/index">Evyavan</a></li>
+{% endblock %}
+
+{% block content %}
+<!-- Carousel
+
+    ================================================== -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="static/slide4.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Investment management</h1>
+              <p>We practice conservative, time-tested strategies that ensure sustainable growth in your investments. All decisions are backed by cutting-edge research, and we never execute unless you understand our rationale.</p>
+              <p><a class="btn btn-lg btn-primary" href="#investment" role="button">More about investments</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="static/slide2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Risk management</h1>
+              <p>There are many different sorts of insurances out there.  We help you sort through the clutter so that you get exactly the protection you need at the lowest price.</p>
+              <p><a class="btn btn-lg btn-primary" href="#risk" role="button">More about risk</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="static/slide5.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Legacy planning</h1>
+              <p>Setting up our children for success is challenging. We can bring you every step of the way, from college planning to inheritance and from tax advice to business succession.</p>
+              <p><a class="btn btn-lg btn-primary" href="#legacy" role="button">More about legacy</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+      <!-- START THE FEATURETTES -->
+      <div>
+      <a name = "investment">
+      </a>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Investments.<span class="text-muted">You're unique, so your portfolio should be too.</span></h2>
+          <p class="lead">We will evaluate your appetite for risk, and then design a one-of-a-kind portfolio for you. Whether it's stocks, ETFs, bonds, money market, UITs, options, or commodities, we'll invest in what you're comfortable in and what will benefit you the most.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="static/stock.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+
+      <div>
+      <a name = "risk">
+      </a>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Risk management. <span class="text-muted">You want to protect the important things.</span></h2>
+          <p class="lead">Should the policy be term or permanent?  What are the tax liabilities?  Are there overlaps in coverages?  What does it say in the fine print? What policy is the most cost-effective? Our years of experience allows us to solve these questions and more.  Insurance is just as big of a part of your financial health as your investments are.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="static/insurance.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <div>
+      <a name = "legacy">
+      </a>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Legacy planning. <span class="text-muted">You want the best for your children.</span></h2>
+          <p class="lead">And we can help you do that. Evyavan can help you save for college and help your kids get into college. As you get older, you'll also find our expertise in wealth transfer and taxes to be invaluable. We'll make sure your children are set up for success.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="static/family.jpg" alt="Third feature">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    <!-- /.container -->
+{% endblock %}
